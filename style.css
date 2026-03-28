@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg, rgb(97, 89, 141), rgb(89, 89, 141));
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background:rgba(16, 16, 61, 0.9); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 120px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    height: 150px;
+    object-fit: cover;
+    box-shadow:0 5px 15px #333;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hobby {
+    background-color: rgb(17, 10, 49);
+    color: rgb(143, 134, 134);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.hobby:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #333;
+}
+
+
+section{
+    scroll-margin: 80px;
+    min-height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(97, 89, 141);
+}
+.card{
+    background: #a7a2a2; 
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+   background-color:  rgb(17, 10, 49);
+   color: thistle;
+   backdrop-filter: blur(10px);
+   font-style: italic;
+   font: italic small-caps bold 16px/30px Georgia, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
